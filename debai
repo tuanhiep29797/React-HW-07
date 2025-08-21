@@ -1,0 +1,23 @@
+Công nghệ: Sử dụng thư viện Ant Design
+📌 Chức năng yêu cầu
+
+Đăng nhập (giả lập)
+Tạo trang login (username, password).
+Nếu login thành công (mock), chuyển vào trang Dashboard.
+Lưu trạng thái login vào localStorage.
+Quản lý Users
+
+Trang danh sách Users.
+API gợi ý: https://jsonplaceholder.typicode.com/users
+Hiển thị bảng users: id, name, email, phone, website.
+Có nút Xem chi tiết user (route riêng /users/:id).
+Cho phép xóa user (fake API nhưng xoá trên state).
+
+Trang danh sách Products.
+API gợi ý: https://fakestoreapi.com/products
+Hiển thị title, price, category, image.
+
+Chức năng:
+
+Xem chi tiết sản phẩm.
+Xóa sản phẩm (trên local state, không gọi API).
