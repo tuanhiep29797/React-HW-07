@@ -4,7 +4,7 @@ import { Button, Card, Flex, Typography } from "antd";
 import { Link } from "react-router-dom";
 const Dashboard = () => {
   const cardStyle = {
-    width: 620,
+    width: 585,
   };
   const imgStyle = {
     display: "block",

@@ -40,7 +40,6 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  
 }
 
 .detail {
@@ -51,4 +50,14 @@
 
 .info {
   display: flex;
+}
+
+.login {
+  margin: 0 auto;
+  margin-top: 200px;
+  width: 700px;
+  border: 1px solid #ffffff83;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px #0000008a;
 }
