@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Breadcrumb, Button, Divider, Space, Table } from "antd";
 import { Link } from "react-router-dom";
-import { DeleteTwoTone, HomeOutlined, HomeTwoTone, InfoCircleTwoTone, ProductOutlined } from "@ant-design/icons";
+import { DeleteTwoTone, HomeTwoTone, InfoCircleTwoTone, ProductOutlined } from "@ant-design/icons";
 
 const Products = () => {
   const [productList, setProductList] = useState([]);
@@ -55,7 +55,7 @@ const Products = () => {
       width: 200,
       render: (text) => (
         <>
-          <img src={text} style={{ height: 100}} />
+          <img src={text} alt="Product IMG" style={{ height: 100}} />
         </>
       ),
     },

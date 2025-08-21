@@ -1,8 +1,8 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Breadcrumb, Button, Divider, Space, Table, Tag } from "antd";
+import { Breadcrumb, Button, Divider, Space, Table } from "antd";
 import { Link } from "react-router-dom";
-import { DeleteTwoTone, HomeOutlined, HomeTwoTone, InfoCircleTwoTone, UserOutlined } from "@ant-design/icons";
+import { DeleteTwoTone, HomeTwoTone, InfoCircleTwoTone, UserOutlined } from "@ant-design/icons";
 
 const Users = () => {
   const [userList, setUserList] = useState([]);

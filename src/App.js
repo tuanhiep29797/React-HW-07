@@ -8,8 +8,7 @@ import Dashboard from "./componentes/Dashboard";
 import Products from "./componentes/Products";
 
 function App() {
-  const isLogin = localStorage.getItem("islogin") === "false";
-
+  
   return (
     <Routes>
       <Route path="/" element={<Login />} />

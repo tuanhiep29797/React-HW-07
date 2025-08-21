@@ -1,4 +1,4 @@
-import { HomeOutlined, HomeTwoTone, ProductOutlined } from "@ant-design/icons";
+import { HomeTwoTone, ProductOutlined } from "@ant-design/icons";
 import { Breadcrumb, Button, Col, Divider, Image, Row } from "antd";
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
