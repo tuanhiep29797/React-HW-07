@@ -2,7 +2,12 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Breadcrumb, Button, Divider, Space, Table } from "antd";
 import { Link } from "react-router-dom";
-import { DeleteTwoTone, HomeTwoTone, InfoCircleTwoTone, ProductOutlined } from "@ant-design/icons";
+import {
+  DeleteTwoTone,
+  HomeTwoTone,
+  InfoCircleTwoTone,
+  ProductOutlined,
+} from "@ant-design/icons";
 
 const Products = () => {
   const [productList, setProductList] = useState([]);
@@ -33,7 +38,9 @@ const Products = () => {
       dataIndex: "title",
       key: "title",
       width: 390,
-      render: (text) => <Link to="/products/:id">{text}</Link>,
+      render: (text, record) => (
+        <Link to={`/products/${record.id}`}>{text}</Link>
+      ),
     },
     {
       title: "Price",
@@ -55,7 +62,7 @@ const Products = () => {
       width: 200,
       render: (text) => (
         <>
-          <img src={text} alt="Product IMG" style={{ height: 100}} />
+          <img src={text} alt="Product IMG" style={{ height: 100 }} />
         </>
       ),
     },
@@ -96,8 +103,6 @@ const Products = () => {
       ),
     },
   ];
-
-
 
   return (
     <div className="container">
