@@ -7,8 +7,8 @@ const Login = () => {
   const onFinish = (values) => {
     if (values.username === "a" && values.password === "1") {
       if (values.remember === true) {
-        localStorage.setItem("username", "a");
-        localStorage.setItem("password", "1");
+        localStorage.setItem("username", "user@gmail.com");
+        localStorage.setItem("password", "password123");
       }
       localStorage.setItem("isLogin", "true");
       navigate("/dashboard");
