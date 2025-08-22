@@ -1,4 +1,3 @@
-import React from "react";
 import { Button, Checkbox, Divider, Form, Input, message } from "antd";
 import { useNavigate } from "react-router-dom";
 

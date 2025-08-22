@@ -30,11 +30,7 @@ const DetailUser = () => {
       ),
     },
     {
-      title: (
-      <Link to={`/users/${user.id}`} >
-        {user.name}
-      </Link>
-      ),
+      title: <Link to={`/users/${user.id}`}>{user.name}</Link>,
     },
   ];
 
@@ -45,7 +41,7 @@ const DetailUser = () => {
       </Divider>
       <Breadcrumb style={{ margin: 12, marginRight: "auto" }} items={items} />
       <Image
-        width={500}
+        width={300}
         src="https://w7.pngwing.com/pngs/490/157/png-transparent-male-avatar-boy-face-man-user-flat-classy-users-icon.png"
       />
       <Space direction="horizontal" className="info">
@@ -73,7 +69,7 @@ const DetailUser = () => {
           defaultActiveKey={["1"]}
           items={[
             {
-              key: "0",
+              key: "1",
               label: "Contact",
               children: (
                 <div>
@@ -91,7 +87,7 @@ const DetailUser = () => {
           defaultActiveKey={["1"]}
           items={[
             {
-              key: "0",
+              key: "1",
               label: "Address",
               children: (
                 <div>
@@ -111,7 +107,7 @@ const DetailUser = () => {
           defaultActiveKey={["1"]}
           items={[
             {
-              key: "0",
+              key: "1",
               label: "Company",
               children: (
                 <div>
